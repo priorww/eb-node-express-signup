@@ -79,6 +79,19 @@ var signup = function (nameSubmitted, emailSubmitted, previewPreference) {
   });
 };
 
+//Get test results
+app.get('/results', function(err, data) {
+
+  var params = { TableName: 'gsg-signup-table' };
+
+  db.query(params, function(err, data) {
+    if (err) console.log(err);
+    else console.log(data);
+  });
+  // how to return this data and fill it into a template like in the routes directory?
+})
+
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
