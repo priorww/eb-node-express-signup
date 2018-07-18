@@ -7,12 +7,12 @@ block content
         li(class="active")
           a(href="#") Home
         li
-          a(href="https://github.com/priorww/eb-node-express-signup") Code
+          a(href="https://github.com/fordprior/eb-node-express-app") Code
         li
           a(href="https://youtu.be/b47TY5VbFHY") Inspiration
         li
           a(href="https://docs.aws.amazon.com/gettingstarted/latest/deploy/awsgsg-deploy.pdf") Tutorial
-      h3(class="text-muted") Los Woookies
+      h3(class="text-muted") #LTWW
     div(id="signupSuccess", class="alert alert-success", style="display:none")
       p(id="signupSuccessText") Thanks for signing up! We'll make sure to add you to our beta list.
     div(id="signupDuplicate", class="alert alert-success", style="display:none")
@@ -20,13 +20,13 @@ block content
     div(id="signupError", class="alert alert-info", style="display:none")
       p(id="signupErrorText") Well this is embarrassing. It looks like we're having trouble getting you on the list.
     div(class="jumbotron")
-      h1 We've killed TREx...
-      p(class="lead") Well, kind of. We've just automated failovers and started pumping results to a shiny new dashboard. Sign up below to onboard your ASV.
+      h1 We've solved world hunger...
+      p(class="lead") Well, kind of. We've actually just automated failovers and started pumping results to a shiny new dashboard. Sign up below to onboard your ASV.
       p
-        a(class="btn btn-lg btn-success", data-toggle="modal", href="#signupModal") Get the beta
+        a(class="btn btn-lg btn-success", data-toggle="modal", href="#signupModal") Check it out!
     
     div(class="footer")
-      p &copy; Wooooooooookies 2018
+      p &copy; Ford Prior 2018
       
     // Modal
     div(class="modal fade", id="signupModal", tabindex="-1", role="dialog", aria-labelledby="signupModal", aria-hidden="true")
@@ -45,7 +45,7 @@ block content
                 label(for="email") Email address
                 input(type="email", class="form-control", id="email", name="email", placeholder="Your email address")
               div(class="form-group")
-                label(for="previewAccess") Interested in contributing?
+                label(for="previewAccess") Interested in the beta?
                 select(class="form-control", name="previewAccess")
                   option Yes
                   option No
