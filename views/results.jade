@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  div(class="container")
+    div(class="header")
+      ul(class="nav nav-pills pull-right")
+        li(class="active")
+          a(href="#") Home
+        li
+          a(href="https://github.com/fordprior/eb-node-express-signup") Code
+        li
+          a(href="https://youtu.be/b47TY5VbFHY") Inspiration
+        li
+          a(href="https://docs.aws.amazon.com/gettingstarted/latest/deploy/awsgsg-deploy.pdf") Tutorial
+      h3(class="text-muted") Test Results
+    
+        <% if(weather !== null){ %>
+          <p><%= weather %></p>
+        <% } %>
+
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+        <% } %>
+    
+    div(class="footer")
+      p &copy; Ford Prior 2018
