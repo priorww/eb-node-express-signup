@@ -7,26 +7,26 @@ block content
         li(class="active")
           a(href="#") Home
         li
-          a(href="#") About
+          a(href="https://github.com/priorww/eb-node-express-signup") Code
         li
-          a(href="#") Blog
+          a(href="https://youtu.be/b47TY5VbFHY") Inspiration
         li
-          a(href="#") Press
-      h3(class="text-muted") A New Startup
+          a(href="https://docs.aws.amazon.com/gettingstarted/latest/deploy/awsgsg-deploy.pdf") Tutorial
+      h3(class="text-muted") Los Woookies
     div(id="signupSuccess", class="alert alert-success", style="display:none")
-      p(id="signupSuccessText") Thanks for signing up! You'll be among the first to know when we launch.
+      p(id="signupSuccessText") Thanks for signing up! We'll make sure to add you to our beta list.
     div(id="signupDuplicate", class="alert alert-success", style="display:none")
-      p(id="signupDuplicateText") Fear not, you're already on the list! You'll be among the first to know when we launch.
+      p(id="signupDuplicateText") Fear not, you're already on the list! You'll be among the first to know when we go into beta.
     div(id="signupError", class="alert alert-info", style="display:none")
       p(id="signupErrorText") Well this is embarrassing. It looks like we're having trouble getting you on the list.
     div(class="jumbotron")
-      h1 The next big thing is coming...
-      p(class="lead") We're pretty thrilled to unveil our latest creation. Sign up below to be notified when we officially launch!
+      h1 We've killed TREx...
+      p(class="lead") Well, kind of. We've just automated failovers and started pumping results to a shiny new dashboard. Sign up below to onboard your ASV.
       p
-        a(class="btn btn-lg btn-success", data-toggle="modal", href="#signupModal") Sign up today
+        a(class="btn btn-lg btn-success", data-toggle="modal", href="#signupModal") Get the beta
     
     div(class="footer")
-      p &copy; A New Startup 2013
+      p &copy; Wooooooooookies 2018
       
     // Modal
     div(class="modal fade", id="signupModal", tabindex="-1", role="dialog", aria-labelledby="signupModal", aria-hidden="true")
@@ -45,12 +45,12 @@ block content
                 label(for="email") Email address
                 input(type="email", class="form-control", id="email", name="email", placeholder="Your email address")
               div(class="form-group")
-                label(for="previewAccess") Interested in Preview Access?
+                label(for="previewAccess") Interested in contributing?
                 select(class="form-control", name="previewAccess")
                   option Yes
                   option No
           div(class="modal-footer")
-            button(id="signup", type="button", class="btn btn-primary") Sign Up!
+            button(id="signup", type="button", class="btn btn-primary") Submit!
   script(src="../static/jquery/jquery.js")
   script(src="../static/bootstrap/js/bootstrap.min.js")
   script.
